@@ -7,7 +7,7 @@
 このリポジトリをクローンします。
 
 ```console
-git clone <このリポジトリのURL> ~/src/flakes
+git clone https://github.com/kurosiko/flakes.git ~/src/flakes
 ```
 
 新しいプロジェクトのディレクトリで、クローンしたリポジトリを指定して初期化します。
@@ -19,10 +19,10 @@ nix flake init -t path:$HOME/src/flakes
 nix develop
 ```
 
-リポジトリを GitHub で公開した後は、クローンせずに直接利用することもできます。
+クローンせずに GitHub から直接利用することもできます。
 
 ```console
-nix flake init -t github:<ユーザー名>/<リポジトリ名>
+nix flake init -t github:kurosiko/flakes
 ```
 
 ## ツールを追加する
